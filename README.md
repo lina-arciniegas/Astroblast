@@ -13,7 +13,7 @@
 
 ## Cómo Jugar
 
-1.  **Clonar el repositorio:** `git clone [URL_DEL_REPOSITORIO]`
+1.  **Clonar el repositorio:** `git clone https://github.com/lina-arciniegas/Astroblast.git`
 2.  **Instalar Pygame:** `pip install pygame`
 3.  **Ejecutar el juego:** `python main.py` o `py main.py`
 
