@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 game_functions.py
 Funciones auxiliares para AstroBlast (menús, HUD, fondo y utilidades).
@@ -127,13 +126,12 @@ def show_game_over_screen(screen, score, background_image):
 
 
 # -----------------------------------------------------------------------------
-# Opcionales para refactor (si quieres mover lógica fuera del main)
+# Opcionales para refactor 
 # -----------------------------------------------------------------------------
 def check_events(player):
     """
     Maneja eventos básicos. Devuelve 'QUIT' si se cierra la ventana; None en caso contrario.
     Dispara con ESPACIO (delegado a player.shoot()).
-    NOTA: tu main.py ya procesa eventos; úsalo solo si decides refactorizar.
     """
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -146,7 +144,7 @@ def update_game_elements(all_sprites, player, enemies, bullets, score, assets=No
     """
     Actualiza sprites y gestiona colisiones.
     Devuelve (estado, score_actualizado), donde estado es 'PLAYING' o 'GAME_OVER'.
-    *No* genera enemigos (eso ya lo hace tu main.py).
+    *No* genera enemigos.
     """
     # Actualización estándar
     all_sprites.update()

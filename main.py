@@ -1,11 +1,8 @@
-# main.py
-
 import pygame
 import sys
 import random
 import os
 
-# Importar los módulos del juego
 import settings
 import sprites
 import game_functions
@@ -21,7 +18,7 @@ pygame.display.set_caption("AstroBlast")
 # Reloj para controlar la velocidad del juego
 clock = pygame.time.Clock()
 
-# --- Carga de Recursos (Imágenes y Sonidos) ---
+#Carga de recursos (imágenes y sonidos)
 def load_assets():
     assets = {}
     # Directorios
@@ -52,7 +49,7 @@ def load_assets():
 
 ASSETS = load_assets()
 
-# --- Función Principal del Juego ---
+# --- Función principal del juego ---
 def game_loop():
     # Grupos de sprites
     all_sprites = pygame.sprite.Group()
@@ -93,7 +90,7 @@ def game_loop():
 
         all_sprites.update()
 
-        # Colisiones: Balas vs Enemigos
+        # Colisiones: balas vs enemigos
         hits = pygame.sprite.groupcollide(enemies, bullets, True, True)
         for hit in hits:
             score += 10 # Puntos por cada enemigo destruido
@@ -123,7 +120,7 @@ def game_loop():
 
     return "GAME_OVER", score # Devolver el estado y la puntuación final
 
-# --- Bucle Principal del Juego (Gestión de Estados) ---
+# --- Bucle principal del juego (gestión de estados) ---
 def main():
     game_state = "MENU"
     final_score = 0

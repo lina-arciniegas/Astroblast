@@ -1,5 +1,3 @@
-# sprites.py
-
 import pygame
 import settings
 
@@ -44,8 +42,7 @@ class Player(pygame.sprite.Sprite):
             self.shoot_sound.play()
 
     def draw(self, screen):
-        # Esta función es en realidad manejada por all_sprites.draw(screen) en main.py
-        # pero la incluimos para completar el requisito.
+        # Esta función es en realidad manejada por all_sprites.draw(screen) en main.py, pero se incluye para completar el requisito.
         screen.blit(self.image, self.rect)
 
 
