@@ -35,8 +35,3 @@
 ## Créditos
 
 *   Desarrollado como un proyecto práctico de PyGame.
-*   [Opcional: Agradecimientos o fuentes de assets si se usan externos]
-
-## Licencia
-
-Este proyecto está bajo la licencia [Ej: MIT o similar, si aplica].
